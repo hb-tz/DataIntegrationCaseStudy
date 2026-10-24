@@ -1,18 +1,10 @@
-<div align="center">
-
 # Data Integration Case Study
-### Campus Tech : le magasin au plus fort chiffre d'affaires est-il le meilleur ?
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-1F3A5F?style=flat-square&logo=python&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-nettoyage%20et%20jointures-1F3A5F?style=flat-square)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-3%20figures-1F3A5F?style=flat-square)
-![Période](https://img.shields.io/badge/p%C3%A9riode-1--28%20avril%202025-4A6572?style=flat-square)
+**Campus Tech : le magasin au plus fort chiffre d'affaires est-il le meilleur ?**
 
-**M1-INF4 · Python Workshop for Data Analysis · Séance 5**
+M1-INF4 · Python Workshop for Data Analysis · Séance 5
 
-Malik · Jeremy · Aylin · Hiba
-
-</div>
+**Groupe 09 :** Malik Louni, Jérémy Vidocin, Aylin Danistekin, Hiba Tazi
 
 ---
 
@@ -84,7 +76,7 @@ Le notebook exécuté est créé sous `notebooks/executed_case_study.ipynb`. Les
 
 Pour travailler dans l'interface Jupyter, lancez `jupyter notebook` depuis `notebooks/`, ouvrez `05-Data-Integration-Case-Study.ipynb`, puis choisissez **Kernel → Restart & Run All**.
 
-> Le notebook vérifie les colonnes requises, les attributs des tables de référence et les totaux réconciliés. Les consignes pédagogiques sont en anglais et les interprétations du groupe en français.
+> Le notebook vérifie les clés des tables de référence, le nombre de lignes après chaque jointure et les totaux réconciliés. Les consignes pédagogiques sont en anglais et les interprétations du groupe en français.
 
 ---
 
@@ -112,10 +104,10 @@ Pour travailler dans l'interface Jupyter, lancez `jupyter notebook` depuis `note
 
 | Membre | Contribution principale |
 |:---|---|
-| **Malik** | Audit des sources et nettoyage des données (sections 1 et 2) : doublons, normalisation, `sales_valid` / `sales_review` |
-| **Jeremy** | Jointures, contrôles des effectifs et réconciliation (section 3) : `integration_review`, `analysis`, `reconciliation.csv` |
-| **Aylin** | Indicateurs et tableaux de synthèse (section 4) : `store_summary`, `category_summary`, tableau quotidien ; Figure 1 |
-| **Hiba** | Figures 2 et 3 et leurs interprétations (section 5) ; figure optionnelle sur le mix de produits |
+| **Malik Louni** | Audit des sources et nettoyage des données (sections 1 et 2) : doublons, normalisation, `sales_valid` / `sales_review` |
+| **Jérémy Vidocin** | Jointures, contrôles des effectifs et réconciliation (section 3) : `integration_review`, `analysis`, `reconciliation.csv` |
+| **Aylin Danistekin** | Indicateurs et tableaux de synthèse (section 4) : `store_summary`, `category_summary`, tableau quotidien ; Figure 1 |
+| **Hiba Tazi** | Figures 2 et 3 et leurs interprétations (section 5) ; figure optionnelle sur le mix de produits |
 | **Tous** | Relecture croisée de l'ensemble, note de synthèse (section 6), exports et vérification de la reproductibilité (section 7), README |
 
 Le travail a été réparti en deux binômes (Malik et Jeremy pour les sections 1 à 3, Aylin et Hiba pour les sections 4 et 5), puis l'ensemble a été relu et validé par les quatre membres. Chaque membre peut expliquer l'unité d'observation, les choix de nettoyage, les contrôles de jointure, les calculs et chaque graphique.
