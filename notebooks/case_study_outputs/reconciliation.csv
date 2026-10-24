@@ -1,0 +1,10 @@
+step,orders,revenue_eur
+1. Lignes brutes sales,252,
+2. - doublons exacts supprimés,-2,
+3. = lignes après déduplication,250,
+4. - lignes invalides (sales_review),-7,
+5. = sales_valid,243,27836.4
+6. - magasin inconnu seulement,-1,-89.69999999999999
+7. - produit inconnu seulement,-1,-39.9
+8. - magasin ET produit inconnus,0,-0.0
+9. = analysis (appariées aux deux références),241,27706.8

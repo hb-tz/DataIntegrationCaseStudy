@@ -1,0 +1,3 @@
+order_id,date,store_id,product_id,quantity,unit_price_eur,store_name,city,store_format,store_merge,product_name,category,product_merge,reasons
+O0010,2025-04-04,S99,P06,3,29.9,,,,left_only,USB hub,Accessories,both,store_id_not_in_stores
+O0011,2025-04-20,S1,P99,1,39.9,Paris Centre,Paris,Small,both,,,left_only,product_id_not_in_products
