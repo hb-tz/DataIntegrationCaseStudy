@@ -72,18 +72,19 @@ python -m pip install -r requirements.txt
 
 **3. Vérifier les données.** Les trois fichiers `case_*.csv` doivent être dans `data/`.
 
-**4. Lancer le notebook** depuis le dossier `notebooks/`
+**4. Exécuter le projet en une commande** depuis la racine du dépôt
 
 ```bash
-cd notebooks
-jupyter notebook
+(cd notebooks && jupyter nbconvert --to notebook --execute \
+  --output executed_case_study.ipynb --output-dir . \
+  05-Data-Integration-Case-Study.ipynb)
 ```
 
-**5. Tout exécuter.** Ouvrir `05-Data-Integration-Case-Study.ipynb`, puis **Kernel → Restart & Run All**.
+Le notebook exécuté est créé sous `notebooks/executed_case_study.ipynb`. Les tableaux et graphiques sont enregistrés dans `notebooks/case_study_outputs/`.
 
-**6. Récupérer les résultats** dans `notebooks/case_study_outputs/`.
+Pour travailler dans l'interface Jupyter, lancez `jupyter notebook` depuis `notebooks/`, ouvrez `05-Data-Integration-Case-Study.ipynb`, puis choisissez **Kernel → Restart & Run All**.
 
-> Le notebook est reproductible : aucune valeur aléatoire, chemins relatifs, cellules exécutées dans l'ordre de haut en bas.
+> Le notebook vérifie les colonnes requises, les attributs des tables de référence et les totaux réconciliés. Les consignes pédagogiques sont en anglais et les interprétations du groupe en français.
 
 ---
 
@@ -92,7 +93,7 @@ jupyter notebook
 | Étape | Ce que nous faisons | Résultat |
 |:---|---|---|
 | **1. Audit** | Effectifs, valeurs manquantes, doublons exacts, unicité des clés | Vue d'ensemble des trois sources |
-| **2. Nettoyage** | Doublons exacts supprimés (avec comptage), identifiants normalisés, dates et nombres convertis (virgule décimale comprise) | `sales_valid`, `sales_review.csv` |
+| **2. Nettoyage** | Doublons exacts supprimés (avec comptage), identifiants normalisés, dates et nombres convertis (virgule décimale comprise), entrées non finies rejetées | `sales_valid`, `sales_review.csv` |
 | **3. Jointures** | Left join avec `validate="many_to_one"` et indicateur, contrôle du nombre de lignes | `analysis`, `integration_review.csv`, `reconciliation.csv` |
 | **4. Indicateurs** | Revenu = quantité × prix unitaire ; total, moyenne et médiane par magasin ; résumé par catégorie ; revenu quotidien | `store_summary.csv`, `category_summary.csv` |
 | **5. Figures** | Total par magasin, distribution des commandes, évolution quotidienne | Trois PNG interprétés |
