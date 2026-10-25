@@ -119,3 +119,4 @@ Le travail a été réparti en deux binômes (Malik et Jeremy pour les sections 
 - Les données sont un extrait de commandes terminées, pas une trace complète de l'activité : un jour absent n'est pas un jour sans vente.
 - Le revenu n'est pas le bénéfice : coûts, personnel, horaires et fréquentation sont inconnus.
 - Aucune conclusion causale n'est tirée de cet échantillon.
+
